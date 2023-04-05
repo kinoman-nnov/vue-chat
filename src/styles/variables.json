@@ -1,0 +1,12 @@
+{
+  "bg-color-dark-mode": "#242424",
+  "bg-color-light-mode": "#ffffff",
+  "text-color-dark-mode": "rgba(255, 255, 255, 0.85)",
+  "text-color-light-mode": "#242424",
+  "links-color": "#4b6fd7",
+  "errors-color": "#cd1515",
+  "bp-desktop-hd": "1800px",
+  "bp-desktop": "1200px",
+  "bp-tablets": "768px",
+  "bp-phones": "480px"
+}
