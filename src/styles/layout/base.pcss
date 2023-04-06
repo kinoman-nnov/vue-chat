@@ -1,3 +1,29 @@
+:root {
+  color-scheme: light dark;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --text-color: $text-color-light-mode;
+    --bg-color: $bg-color-light-mode;
+  }
+  a:hover {
+    color: #747bff;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: $text-color-dark-mode;
+    --bg-color: $bg-color-dark-mode;
+  }
+  a:hover {
+    color: #747bff;
+  }
+}
+
 html {
   @include desktop {
     font-size: 15px;
@@ -6,6 +32,7 @@ html {
     font-size: 14px;
   }
 }
+
 body,
 html {
   height: 100%;
@@ -17,7 +44,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;font-size: 16px;
   line-height: 1.42;
-  color: $bg-color;
 }
 
 .wrapper {

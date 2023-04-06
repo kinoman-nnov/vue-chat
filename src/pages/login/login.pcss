@@ -9,18 +9,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background: $bg-color; */
-
-  &:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0.5;
-    background: $text-color;
-  }
 }
 
 .form-title {
@@ -29,8 +17,7 @@
   font-weight: 600;
 
   @include phones {
-    color: red;
-    font-size: 16px;
+    font-size: 26px;
     text-align: center;
     font-weight: 300;
   }
@@ -52,14 +39,14 @@
 .btn {
   display: flex;
   width: 100%;
-  padding: 0 8%;
   justify-content: center;
 }
 
 .form {
   width: 563px;
   padding: 50px 77px 60px;
-  background: #fff;
+  border-radius: 6px;
+  background: #42b983;
 
   @include phones {
     width: 100%;

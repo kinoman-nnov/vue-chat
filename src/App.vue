@@ -1,15 +1,15 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <login />
-    <mainpage />
+  <div class="container">
+    <div id="app">
+      <login />
+      <mainpage />
+    </div>
   </div>
 </template>
 
 <script>
 import login from './pages/login'
 import mainpage from './pages/mainpage'
-
 export default {
   name: 'App',
   components: {
@@ -19,4 +19,4 @@ export default {
 }
 </script>
 
-<style lang="pcss"></style>
+<style lang="postcss"></style>
