@@ -1,28 +1,30 @@
 <template lang="pug">
-.login-component
-  .content
-    form(
-      @submit.prevent="handleSubmit"
-    ).form
-      .form-title Войти в чат
-      .row
-        app-input(
-          placeholder="никнейм"
-          title="Логин"
-          v-model="user.name"
-          icon="user"
-        )
-      .row
-        app-input(
-          title="Пароль"
-          v-model="user.password"
-          icon="key"
-          type="password"
-        )
-      .btn
-        app-button(
-          :disabled="isSubmitDisabled" typeAttr="submit" title="Войти"
-        )
+  .login-component
+    pre {{user}}
+    .content
+      form(
+        @submit.prevent="handleSubmit"
+      ).form
+        .form-title Войти в чат
+        .row
+          app-input(
+            placeholder="username"
+            title="Логин"
+            v-model="user.name"
+            icon="user"
+          )
+        .row
+          app-input(
+            placeholder="password"
+            title="Пароль"
+            v-model="user.password"
+            icon="key"
+            type="password"
+          )
+        .btn
+          app-button(
+            :disabled="isSubmitDisabled" typeAttr="submit" title="Войти"
+          )
 </template>
 
 <script>

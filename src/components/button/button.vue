@@ -1,6 +1,6 @@
 <template>
   <button
-    :class="['default-btn-container', 'btn-decorator', { disabled }, { plain }, {grey}]"
+    :class="['default-btn-container', 'btn-decorator', { disabled }, { plain }, { grey }]"
     v-if="typeAttr !== 'file'"
     :type="typeAttr"
     v-on="$listeners"

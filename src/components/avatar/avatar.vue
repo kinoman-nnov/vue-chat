@@ -5,24 +5,12 @@
         <img v-bind="$attrs" alt="user picture" />
       </div>
     </div>
-    <div class="user-container">
-      <div class="username">{{ name }}</div>
-      <div class="usersurname">{{ surname }}</div>
-    </div>
   </div>
 </template>
 
 <script>
 export default {
   props: {
-    name: {
-      type: String,
-      default: 'имя'
-    },
-    surname: {
-      type: String,
-      default: 'фамилия'
-    },
     size: {
       type: String,
       default: '3'
@@ -41,7 +29,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="postcss" scoped>
 .avatar-component {
   display: flex;
   align-items: center;

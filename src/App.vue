@@ -1,15 +1,13 @@
 <template>
   <div class="container">
-    <div id="app">
-      <login />
-      <mainpage />
-    </div>
+    <login />
+    <mainpage />
   </div>
 </template>
 
 <script>
-import login from './pages/login'
-import mainpage from './pages/mainpage'
+import login from './pages/login';
+import mainpage from './pages/mainpage';
 export default {
   name: 'App',
   components: {
